@@ -16,10 +16,23 @@ body {
     margin: 0 auto;
 }
 
-strong {
+#title {
     font-size: 1.5em;
     color: #33485e;
     text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.menu {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.menu li {
+    display: inline;
 }
 
 .sectionheader {
@@ -50,6 +63,25 @@ strong {
     margin-top: 2px;
 }
 
+.description {
+    margin: 10px 0px;
+}
+
 li {
     font-size: 1em;
+}
+
+#degrees {
+    margin-top: 5px;
+}
+
+#do {
+    margin-top: 5px;
+}
+
+.top {
+    width: 60%;
+    min-width: 300px;
+    margin: 0 auto;
+    margin-bottom: 30px;
 }
