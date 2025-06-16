@@ -22,28 +22,32 @@ strong {
     text-transform: uppercase;
 }
 
-h2 {
+.sectionheader {
     font-size: 1.5em;
     text-transform: uppercase;
     background-color: #33485e;
     color: #fff;
     font-weight: 400;
+    margin: 20px 0px 10px 0px;
+    width: 70%;
+    min-width: 300px;
 }
 
-h3 {
+.jobtitle {
     font-weight: 600;
     font-size: 1.5em;
 }
 
-h4 {
+.organization {
     font-weight: 400;
-    font-size: 1.5em;
+    font-size: 1.25em;
 }
 
-h5 {
+.date {
     font-weight: 400;
     font-style: italic;
     font-size: 1em;
+    margin-top: 2px;
 }
 
 li {
