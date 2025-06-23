@@ -1,0 +1,26 @@
+h1, h2, h3, .navbar-brand, .btn {
+    font-family: 'Special Elite', sans-serif;
+}
+
+.bi {
+    font-size: 3em;
+}
+
+.row {
+    padding-bottom: 50px;
+}
+
+/* I'm making this lighter here because in your sample screenshot it's legible and for some reason on my computer it isn't */
+.text-muted {
+    color: gray !important;
+}
+
+@media only screen and (max-width: 500px) {
+    h2 {
+        padding-top: 50px;
+    }
+
+    .btn {
+        background-color: teal;
+    }
+}
