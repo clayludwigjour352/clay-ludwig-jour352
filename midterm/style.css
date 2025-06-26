@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFFCED;
+}
+
+#masthead {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    border-bottom: 2px solid #000000;
+}
+
+#content {
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+#heading {
+    padding: 20px 0;
+    border-bottom: 2px solid #000000;
+}
+
+#heading h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+#heading h2 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 24px;
+}
+
+#details {
+    padding: 14px 0;
+    border-bottom: 2px solid #000000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+    margin-bottom: 24px;
+}
+
+#details a {
+    font-weight: bold;
+    text-decoration: underline;
+    color: black;
+}
+
+p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Subheads within body */
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 22px;
+    color: black;
+}
+
+img {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.caption {
+    width: 100%;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: gray;
+}
+
+blockquote {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 26px;
+    color: gray;
+    padding: 24px 0; /* Separate blockquotes from the rest of the content */
+}
+
+#related {
+    padding: 20px 0;
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+}
+
+li a {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: #000000;
+}
