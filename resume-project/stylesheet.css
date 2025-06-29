@@ -1,0 +1,153 @@
+/* Header that scrolls with the page as you move down it */
+header {
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+    background-color: white !important;
+    font-family: 'Open Sans', Arial, sans-serif;
+    z-index: 100; /* For some reason the cards from my work/skills sections were overlapping over the header so I'm adding this */
+}
+.nav-link {
+    color: gray !important;
+}
+.nav-link.active {
+    background-color: transparent !important;
+    color: #00AEEF !important;
+}
+
+/* Hero section */
+.hero {
+    width: 100%;
+    background-image: url("./images/header-background.jpg"); /* Background image of photo I took */
+    background-size: cover;
+    padding-top: 72px;
+}
+.hero .container {
+    padding: 40px;
+}
+.hero .col.left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+.hero h1 {
+    color: white;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+.hero h2 {
+    color: white;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+.hero .portrait {
+    width: 260px;
+    height: 260px;
+    border-radius: 260px;
+}
+
+/* General section styles */
+.section {
+    padding: 40px;
+}
+.section h3 {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: gray;
+}
+.section p {
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: black;
+}
+.section .card {
+    border-radius: 0;
+    border: none;
+    background-color: #e4e4e4;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Specific styles for bio section */
+#bio .social-icons {
+    display: flex;
+    gap: 16px;
+    font-size: 20px;
+    color: #00AEEF;
+}
+
+/* Specific styles for work section */
+#work .card .job-title {
+    color: gray;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+#work .card .job-name {
+    color: black;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+/* Specific styles for education section */
+#education .education-info {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+#education .education-info img {
+    width: 100px;
+    height: 100px;
+}
+#education .college {
+    color: black;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+#education .degree, .graduation {
+    color: black;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Specific styles for skills section */
+#skills i {
+    font-size: 20px;
+}
+#skills .skill-name {
+    color: black;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+/* Footer */
+footer {
+    padding: 26px;
+    border-top: 1px solid lightgray;
+}
+
+/* Mobile styles */
+@media (max-width: 767.98px) {
+    h1, h2 {
+        text-align: center;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+    
+    .col.left {
+        text-align: center;
+        margin-bottom: 16px;
+    }
+}
