@@ -1,0 +1,66 @@
+/* General styles */
+body {
+    font-family: 'Newsreader', Georgia, 'Times New Roman', Times, serif;
+}
+nav, h1, h2 {
+    font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
+}
+p {
+    font-size: 17px;
+}
+
+/* Topper (headline + byline) */
+.topper {
+    padding: 80px 0 60px 0;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+h1 {
+    font-weight: bold;
+    font-size: 55px;
+    text-align: center;
+}
+.topper .byline {
+    font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Chapters */
+.chapter {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 26px 0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Images and captions */
+.photo-container {
+    margin: 0 auto;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.photo-container img {
+    width: 100%;
+    height: auto;
+}
+.photo-container .caption {
+    color: gray;
+}
+
+/* Columns */
+.columns {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 26px 0;
+}
+
+/* Footer */
+footer {
+    border-top: 1px solid lightgray;
+}
