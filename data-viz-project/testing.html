@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Car Wobble with Spinning Wheels</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    h1 {
+        font-family: 'Instrument Serif', serif;
+        font-weight: normal;
+        font-size: 120px;
+        text-align: center;
+        line-height: 110px;
+        margin-bottom: 110px;
+        
+    }
+
+    h1 i {
+        color: #ff5500;
+    }
+
+    h2 {
+        font-family: 'Instrument Sans', sans-serif;
+        font-weight: normal;
+       
+    }
+
+    .car-container {
+      position: relative;
+      width: 300px;
+      animation: wobble 0.5s infinite ease-in-out;
+      scale: 2.25;
+    }
+
+    .car-body {
+      width: 100%;
+      display: block;
+    }
+
+    .wheel {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      animation: spin 0.5s linear infinite;
+    }
+
+    .wheel.front {
+      bottom: -5px;
+      left: 40px;
+    }
+
+    .wheel.rear {
+      bottom: -10px;
+      right: 23px;
+    }
+
+    @keyframes wobble {
+      0%   { transform: translateY(0) rotate(0deg); }
+      25%  { transform: translateY(-2px) rotate(-0.5deg); }
+      50%  { transform: translateY(0) rotate(0deg); }
+      75%  { transform: translateY(2px) rotate(0.5deg); }
+      100% { transform: translateY(0) rotate(0deg); }
+    }
+
+    @keyframes spin {
+      0%   { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+    <h1>Musk's Road<br>to <i>Nowhere</i></h1>
+  <div class="car-container">
+    <!-- Wheels -->
+    <img src="./images/wheel.svg" class="wheel front" alt="Front Wheel">
+    <img src="./images/wheel.svg" class="wheel rear" alt="Rear Wheel">
+    
+    <!-- Car body -->
+    <img src="./images/cybertruck.svg" class="car-body" alt="Car Body">
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,227 @@
+body {
+    background-color: white;
+    overflow-x: hidden;
+    /* Hiding x scroll on the whole page:
+    I want the .road element to be positioned the way it is, but I couldn't
+    figure out a way to do that without causing it to overflow horizontally off the page. */
+}
+
+/* General element styles */
+img {
+    width: 100%;
+}
+.image-caption {
+    width: 100%;
+    padding: 10px 0 20px;
+    font-family: 'Instrument Sans', Arial, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    color: gray;
+}
+p {
+    width: 100%;
+    margin-top: 26px;
+    font-family: 'Instrument Sans', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: black;
+}
+h3 { /* Subheads */
+    width: 100%;
+    font-family: 'Instrument Serif', Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: normal;
+    line-height: 1.25;
+    color: black;
+}
+a {
+    color: #3B7CB7;
+    text-decoration: underline;
+}
+blockquote {
+    font-family: 'Instrument Serif', Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-size: 56px !important;
+    line-height: 65px !important;
+    color: black;
+}
+
+/* Embedded chart */
+.chart {
+    margin: 50px 0;
+}
+
+/* Nav */
+.navbar {
+    font-family: 'Instrument Sans', Arial, sans-serif;
+    background-color: white !important;
+    border-bottom: 1px solid black;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 1000; /* Make sure it's higher than everythign else */
+}
+.navbar-brand {
+    width: 130px;
+}
+.nav-link.blue {
+    color: #3B7CB7;
+}
+
+/* Hero */
+.hero {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Headline */
+h1 {
+    font-family: 'Instrument Serif', Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-size: max(72px, 8vw) !important;
+    line-height: max(68px, 7.35vw) !important;
+    margin-bottom: 110px;
+    color: black;
+}
+
+/* Subhead */
+h2 {
+    font-family: 'Instrument Serif', Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-size: 85px !important;
+    line-height: 90px !important;
+    margin-bottom: 100px;
+    color: black;
+}
+
+/* Accent color on italicized words */
+h1 i, h2 i, blockquote i {
+    color: #3B7CB7;
+}
+
+/* Byline */
+.byline {
+    font-family: 'Instrument Sans', Arial, sans-serif;
+}
+
+/* Hero animation */
+.car-container {
+    position: relative;
+    width: 300px;
+    animation: wobble 0.5s infinite ease-in-out;
+    scale: 2.25;
+    margin: 0 auto;
+}
+.car-body {
+    width: 100%;
+    display: block;
+}
+.wheel {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    animation: spin 0.5s linear infinite;
+}
+.wheel.rear {
+    bottom: -8px;
+    left: 40px;
+}
+.wheel.front {
+    bottom: -12px;
+    right: 23px;
+}
+/*
+https://www.w3schools.com/css/css3_animations.asp
+
+I used this source to help me with animations
+*/
+@keyframes wobble {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    25% {
+        transform: translateY(-2px) rotate(-0.5deg);
+    }
+    50% {
+        transform: translateY(0) rotate(0deg);
+    }
+    75% {
+        transform: translateY(2px) rotate(0.5deg);
+    }
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.road {
+    width: 100%;
+    scale: 2;
+    margin: 84px auto 0;
+}
+
+/* Scroll down indicator */
+.scroll-indicator {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+.scroll-indicator img {
+    width: 40px;
+    height: auto;
+}
+
+/* Explainer */
+.explainer {
+    padding: 10vh 0 !important;
+}
+
+/* Break */
+.break {
+    padding: 6vh 0 !important;
+}
+.break h2 {
+    margin-bottom: 60px;
+}
+
+/* Promise sections */
+.promise {
+    margin: 60px 0;
+}
+
+/* Bottom car */
+.car-container-bottom {
+    position: relative;
+    margin-top: 100px;
+    margin-left: 45px;
+    width: 300px;
+    animation: wobble 0.5s infinite ease-in-out;
+    scale: 1.25;
+}
+
+/* Cybertrucks get really large on small screen sizes so I'm going to lower them */
+@media only screen and (max-width: 700px) {
+    .car-container {
+        scale: 1.5;
+    }
+    .road {
+        scale: 1.5;
+        margin: 50px auto 0;
+    }
+    h2 {
+        font-size: 65px !important;
+        line-height: 70px !important;
+        margin-bottom: 80px;
+    }
+}
